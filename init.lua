@@ -1,10 +1,10 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
---require('go').setup {
-	---- other setups ....
+require('go').setup {
+	-- other setups ....
 	--capabilities = capabilities,
-	---- other setups
---}
+	-- other setups
+}
 
 
 --local format_sync_grp = vim.api.nvim_create_augroup("GoImport", {})
