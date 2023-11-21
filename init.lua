@@ -2,7 +2,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 require('go').setup {
 	-- other setups ....
-	--capabilities = capabilities,
+	capabilities = capabilities,
 	-- other setups
 }
 
