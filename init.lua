@@ -9,7 +9,6 @@ require('go').setup({
   },
 })
 
-vim.lsp.buf.formatting_sync(nil,500)
 
 local format_sync_grp = vim.api.nvim_create_augroup("GoImport", {})
 vim.api.nvim_create_autocmd("BufWritePre", {
