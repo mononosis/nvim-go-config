@@ -1,8 +1,5 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
-lspconfig.gopls.setup({
-	capabilities = capabilities,
-})
 
 require('go').setup({
 	-- notify: use nvim-notify
@@ -40,6 +37,9 @@ require('go').setup({
 	quick_type_flags = { '--just-types' },
 })
 
+lspconfig.gopls.setup({
+	capabilities = capabilities,
+})
 
 --local format_sync_grp = vim.api.nvim_create_augroup("GoImport", {})
 --vim.api.nvim_create_autocmd("BufWritePre", {
